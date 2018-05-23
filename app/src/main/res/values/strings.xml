@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Quản lý sinh viên</string>
+    <string name="ql_lop_hoc_title">Quản lý lớp học</string>
+    <string name="ql_sv_title">Quản lý sinh viên</string>
+    <string name="tim_sinh_vien">Tìm sinh viên</string>
+    <string name="thong_tin_sv_title">Thông tin:</string>
+</resources>

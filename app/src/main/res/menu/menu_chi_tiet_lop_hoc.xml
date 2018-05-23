@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuAdd"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Thêm"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_thong_ke"
+        android:icon="@drawable/ic_thong_ke"
+        android:title="Xem thống kê"
+        app:showAsAction="always" />
+</menu>

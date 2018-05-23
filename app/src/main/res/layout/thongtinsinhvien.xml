@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTieude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Thông tinh sinh viên"
+        android:textColor="#ffff3037"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMaSV1"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTieude"
+        android:text="Mã sinh viên:"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/txtMaSV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTieude"
+        android:layout_toRightOf="@+id/tvMaSV1"
+        android:paddingLeft="10dp"
+        android:text="10112239"
+        android:textColor="#ff1707ff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvTenSV"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMaSV1"
+        android:paddingTop="10dp"
+        android:text="Tên sinh viên"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/txtTenSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMaSV1"
+        android:layout_toRightOf="@+id/tvTenSV"
+        android:hint="Nguyễn Văn A"
+        android:textColor="#ff2c0fff" />
+
+    <TextView
+        android:id="@+id/tvGT1"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTenSV"
+        android:paddingTop="10dp"
+        android:text="Giới tính"
+        android:textColor="#000000" />
+
+    <RadioGroup
+        android:id="@+id/rdgGT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtMaSV1"
+        android:layout_below="@+id/txtTenSV"
+        android:layout_toRightOf="@+id/tvGT"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdbGTnam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:paddingTop="10dp"
+            android:text="Nam" />
+
+        <RadioButton
+            android:id="@+id/rdbGTnu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:paddingTop="10dp"
+            android:text="Nữ" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="32dp"
+        android:text="Quay lại" />
+
+    <Button
+        android:id="@+id/btnCapNhat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnBack"
+        android:layout_alignBottom="@+id/btnBack"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@+id/btnBack"
+        android:text="Cập nhật" />
+
+    <LinearLayout
+        android:id="@+id/ll_sv_diem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rdgGT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Điểm quá trình"
+            android:textColor="#ffff3037"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <!--Field thường kỳ-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTK"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/edtTK"
+                android:layout_alignBottom="@+id/edtTK"
+                android:layout_alignParentStart="true"
+                android:text="Thường kỳ"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/edtTK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtTenSV"
+                android:layout_below="@+id/textView4"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <!--field giữa kỳ-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvGK"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/edtGK"
+                android:layout_alignBottom="@+id/edtGK"
+                android:layout_alignStart="@+id/tvCK"
+                android:text="Giữa kỳ"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/edtGK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/edtTK"
+                android:layout_below="@+id/edtTK"
+                android:inputType="numberSigned" />
+        </LinearLayout>
+
+        <!--Field cuối kỳ-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCK"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/edtCK"
+                android:layout_alignBottom="@+id/edtCK"
+                android:layout_alignEnd="@+id/tvGT1"
+                android:text="Cuối kỳ"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/edtCK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/edtGK"
+                android:layout_below="@+id/edtGK"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <!--Field cuối kỳ-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTongKEt"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Tổng kết"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/tvTongKetGiaTri"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

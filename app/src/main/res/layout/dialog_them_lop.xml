@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#24b77c">
+
+    <TextView
+        android:id="@+id/textThem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm Lớp Học"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#171573"
+        />
+
+    <EditText
+        android:id="@+id/edittextMaLop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textThem"
+        android:hint="Nhập mã lớp học"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/edittextTenLop"
+        android:hint="Nhập tên lớp học"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittextMaLop" />
+    <Button
+        android:id="@+id/buttonThem"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/edittextTenLop"
+        android:text="Thêm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/buttonHuy"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/buttonThem"
+        android:layout_below="@id/edittextTenLop"
+        android:text="Hủy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
