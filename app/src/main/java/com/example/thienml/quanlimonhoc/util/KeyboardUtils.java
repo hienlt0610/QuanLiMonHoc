@@ -1,4 +1,4 @@
-package com.example.thienml.quanlimonhoc;
+package com.example.thienml.quanlimonhoc.util;
 
 import android.app.Activity;
 import android.graphics.Rect;

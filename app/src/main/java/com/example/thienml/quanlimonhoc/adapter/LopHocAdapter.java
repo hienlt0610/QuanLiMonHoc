@@ -1,4 +1,4 @@
-package com.example.thienml.quanlimonhoc;
+package com.example.thienml.quanlimonhoc.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,6 +7,10 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.thienml.quanlimonhoc.model.LopHoc;
+import com.example.thienml.quanlimonhoc.R;
+import com.example.thienml.quanlimonhoc.ui.QuanLyLopHocActivity;
 
 import java.util.List;
 

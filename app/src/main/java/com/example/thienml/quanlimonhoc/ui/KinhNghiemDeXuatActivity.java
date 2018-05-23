@@ -1,4 +1,4 @@
-package com.example.thienml.quanlimonhoc;
+package com.example.thienml.quanlimonhoc.ui;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +9,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.thienml.quanlimonhoc.util.DataBaseHelper;
+import com.example.thienml.quanlimonhoc.model.LopHoc;
+import com.example.thienml.quanlimonhoc.R;
 
 public class KinhNghiemDeXuatActivity extends BaseActivity {
     private static final String KEY_MA_LOP = "MA_LOP";

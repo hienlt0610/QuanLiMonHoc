@@ -1,4 +1,4 @@
-package com.example.thienml.quanlimonhoc;
+package com.example.thienml.quanlimonhoc.ui;
 
 
 import android.content.ContentValues;
@@ -13,6 +13,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.example.thienml.quanlimonhoc.util.DataBaseHelper;
+import com.example.thienml.quanlimonhoc.adapter.MyAdapter;
+import com.example.thienml.quanlimonhoc.R;
+import com.example.thienml.quanlimonhoc.model.Sinhvien;
+import com.example.thienml.quanlimonhoc.util.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -165,7 +171,7 @@ public class ChiTietLopHocActivity extends BaseActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK && requestCode == REQUEST_SINH_VIEN && data != null) {
             //Nhận thông tin sinh viên từ màn hình tìm sinh viên được chọn
-            Sinhvien itemSinhVien = (Sinhvien) data.getSerializableExtra(TimSinhVien.KEY_SINH_VIEN);
+            Sinhvien itemSinhVien = (Sinhvien) data.getSerializableExtra(TimSinhVienActivity.KEY_SINH_VIEN);
             themSinhVienVaoLopHoc(itemSinhVien);
         }
         arrayList.clear();
@@ -206,7 +212,7 @@ public class ChiTietLopHocActivity extends BaseActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         //Khi bấm nút thêm sinh viên thì mở màn hình danh sách sinh viên và chọn sinh viên từ đó
         if (item.getItemId() == R.id.menuAdd) {
-            Intent intent = TimSinhVien.newIntent(this);
+            Intent intent = TimSinhVienActivity.newIntent(this);
             startActivityForResult(intent, REQUEST_SINH_VIEN);
         } else if (item.getItemId() == android.R.id.home) {
             //Khi bấm nút back thì trở về màn hình trước đó

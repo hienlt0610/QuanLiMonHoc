@@ -1,4 +1,4 @@
-package com.example.thienml.quanlimonhoc;
+package com.example.thienml.quanlimonhoc.util;
 
 import android.text.InputFilter;
 import android.text.Spanned;

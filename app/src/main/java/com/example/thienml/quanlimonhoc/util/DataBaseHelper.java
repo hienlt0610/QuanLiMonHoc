@@ -1,4 +1,4 @@
-package com.example.thienml.quanlimonhoc;
+package com.example.thienml.quanlimonhoc.util;
 
 
 import android.content.ContentValues;
@@ -7,6 +7,10 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+
+import com.example.thienml.quanlimonhoc.model.DanhGia;
+import com.example.thienml.quanlimonhoc.model.LopHoc;
+import com.example.thienml.quanlimonhoc.model.Sinhvien;
 
 import java.util.ArrayList;
 import java.util.List;

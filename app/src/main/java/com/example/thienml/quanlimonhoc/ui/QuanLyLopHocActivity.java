@@ -1,10 +1,9 @@
-package com.example.thienml.quanlimonhoc;
+package com.example.thienml.quanlimonhoc.ui;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,6 +14,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.example.thienml.quanlimonhoc.util.DataBaseHelper;
+import com.example.thienml.quanlimonhoc.model.LopHoc;
+import com.example.thienml.quanlimonhoc.adapter.LopHocAdapter;
+import com.example.thienml.quanlimonhoc.R;
 
 import java.util.ArrayList;
 

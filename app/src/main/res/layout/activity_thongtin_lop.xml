@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".QuanLyLopHocActivity">
+    tools:context=".ui.QuanLyLopHocActivity">
 
     <TextView
         android:layout_marginTop="8dp"

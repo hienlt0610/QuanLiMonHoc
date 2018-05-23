@@ -1,4 +1,4 @@
-package com.example.thienml.quanlimonhoc;
+package com.example.thienml.quanlimonhoc.ui;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,6 +14,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.thienml.quanlimonhoc.model.DanhGia;
+import com.example.thienml.quanlimonhoc.adapter.DanhGiaAdapter;
+import com.example.thienml.quanlimonhoc.util.DataBaseHelper;
+import com.example.thienml.quanlimonhoc.util.ItemClickSupport;
+import com.example.thienml.quanlimonhoc.util.KeyboardUtils;
+import com.example.thienml.quanlimonhoc.R;
 
 import java.util.List;
 

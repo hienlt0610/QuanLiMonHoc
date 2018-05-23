@@ -1,4 +1,4 @@
-package com.example.thienml.quanlimonhoc;
+package com.example.thienml.quanlimonhoc.adapter;
 
 
 import android.content.Context;
@@ -9,6 +9,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.thienml.quanlimonhoc.R;
+import com.example.thienml.quanlimonhoc.model.Sinhvien;
 
 import java.util.ArrayList;
 import java.util.List;

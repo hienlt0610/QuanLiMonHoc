@@ -1,4 +1,4 @@
-package com.example.thienml.quanlimonhoc;
+package com.example.thienml.quanlimonhoc.ui;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,6 +15,10 @@ import com.anychart.anychart.EnumsAlign;
 import com.anychart.anychart.LegendLayout;
 import com.anychart.anychart.Pie;
 import com.anychart.anychart.ValueDataEntry;
+import com.example.thienml.quanlimonhoc.util.DataBaseHelper;
+import com.example.thienml.quanlimonhoc.model.LopHoc;
+import com.example.thienml.quanlimonhoc.R;
+import com.example.thienml.quanlimonhoc.model.Sinhvien;
 
 import java.util.ArrayList;
 import java.util.List;

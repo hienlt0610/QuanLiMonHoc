@@ -1,4 +1,4 @@
-package com.example.thienml.quanlimonhoc;
+package com.example.thienml.quanlimonhoc.ui;
 
 
 import android.content.ContentValues;
@@ -17,6 +17,12 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.thienml.quanlimonhoc.util.DataBaseHelper;
+import com.example.thienml.quanlimonhoc.util.InputFilterMinMax;
+import com.example.thienml.quanlimonhoc.R;
+import com.example.thienml.quanlimonhoc.model.Sinhvien;
+import com.example.thienml.quanlimonhoc.util.Utils;
 
 public class ChiTietSinhVienActivity extends BaseActivity {
     private static final String KEY_MA_SV = "MA_SV";

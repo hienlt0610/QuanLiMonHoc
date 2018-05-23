@@ -11,27 +11,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".QuanLyLopHocActivity" />
+        <activity android:name=".ui.QuanLyLopHocActivity" />
         <activity
-            android:name=".QuanLySinhVienActivity"
+            android:name=".ui.QuanLySinhVienActivity"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".ChiTietSinhVienActivity" />
-        <activity android:name=".ChiTietLopHocActivity" />
-        <activity android:name=".ThongKeLopActivity" />
+        <activity android:name=".ui.ChiTietSinhVienActivity" />
+        <activity android:name=".ui.ChiTietLopHocActivity" />
+        <activity android:name=".ui.ThongKeLopActivity" />
         <activity
-            android:name=".TimSinhVien"
-            android:windowSoftInputMode="stateHidden" />
-        <activity
-            android:name=".DanhGiaLopActivity"
+            android:name=".ui.TimSinhVienActivity"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".KinhNghiemDeXuatActivity"
+            android:name=".ui.DanhGiaLopActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.KinhNghiemDeXuatActivity"
             android:windowSoftInputMode="stateHidden" />
     </application>
 

@@ -1,14 +1,12 @@
-package com.example.thienml.quanlimonhoc;
+package com.example.thienml.quanlimonhoc.ui;
 
 
 import android.content.ContentValues;
-import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -19,10 +17,12 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import java.io.File;
-import java.io.FileInputStream;
+import com.example.thienml.quanlimonhoc.util.DataBaseHelper;
+import com.example.thienml.quanlimonhoc.adapter.MyAdapter;
+import com.example.thienml.quanlimonhoc.R;
+import com.example.thienml.quanlimonhoc.model.Sinhvien;
+
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 

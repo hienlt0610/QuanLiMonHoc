@@ -1,4 +1,4 @@
-package com.example.thienml.quanlimonhoc;
+package com.example.thienml.quanlimonhoc.util;
 
 public class Utils {
     public static Integer strToInt(String str, Integer defaultValue) {
